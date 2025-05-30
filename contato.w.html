@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Barbearia W.DUcorte</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/contato.css">
+    <link rel="stylesheet" href="assets/css/medias.css">
+    <link rel="stylesheet" href="assets/css/body.css">
+    <link href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx8XmkC509zkRmVGGjH3QfibWw2y1xYp06lQ&s" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#conteudoPrincipal">Pular para o conteúdo principal</a>
+        <div class="caixa">
+            <h1><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx8XmkC509zkRmVGGjH3QfibWw2y1xYp06lQ&s" alt="Logo da Barbearia Alura"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudoPrincipal">
+        <h2>Entre em Contato Conosco</h2>
+        <form>
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <label for="nome-sobrenome">Nome e Sobrenome</label>
+                <input type="text" id="nome-sobrenome" class="input-padrao" placeholder="Ex: João Silva" required>
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" placeholder="(XX) XXXXX-XXXX" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" class="input-padrao" placeholder="seuemail@seudomínio.com" required>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" class="input-padrao" placeholder="Deixe sua mensagem aqui" rows="5" required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Como prefere nosso contato?</legend>
+                <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> E-mail</label>
+                <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Qual horário prefere ser atendido?</legend>
+                <select id="horario" required>
+                    <option value="manha">Manhã</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noite">Noite</option>
+                </select>
+            </fieldset>
+
+            <label for="checkbox">
+                <input type="checkbox" id="checkbox" checked> Gostaria de receber nossas novidades por e-mail?
+            </label>
+
+            <input type="submit" value="Enviar formulário" class="enviar">
+        </form>
+
+        <section>
+            <h3>Nosso Horário de Funcionamento</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda-feira</td>
+                        <td>08h às 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta-feira</td>
+                        <td>08h às 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta-feira</td>
+                        <td>08h às 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx8XmkC509zkRmVGGjH3QfibWw2y1xYp06lQ&s" alt="Logo da Barbearia Alura">
+        <p class="Copyright">&copy; Copyright Barbearia W.DUcorte - 2021</p>
+    </footer>
+</body>
+</html>
